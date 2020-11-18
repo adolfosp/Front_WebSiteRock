@@ -38,8 +38,10 @@ body {
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	nav{
-		z-index: 10500;
+	.malister{
+		font-family: 'Malister';
+		font-size: 250px;
+		font-weight: bolder;
 	}
 	ul li a {
 		font-family: 'HigherJump';

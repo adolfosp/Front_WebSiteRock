@@ -38,8 +38,10 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-#apresentacao nav {
-  z-index: 10500;
+#apresentacao .malister {
+  font-family: "Malister";
+  font-size: 250px;
+  font-weight: bolder;
 }
 #apresentacao ul li a {
   font-family: "HigherJump";
