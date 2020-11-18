@@ -8,6 +8,10 @@
 	font-family: 'NugoSans';
 	src: url('../fonts/NugoSansLight-9YzoK.ttf');
 }
+@font-face {
+	font-family: 'Malister';
+	src: url('../fonts/Malister-K7ZRo.ttf')
+}
 
 body {
 	margin: 0;
@@ -98,17 +102,15 @@ body {
 }
 #footer {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+	overflow-y: hidden;
 	grid-area: footer;
 	background-color: black;
 	color: white;
 	height: 50vh;
 	align-items: flex-end;
 	clip-path: polygon(100% 6%, 100% 100%, 0 100%, 0 20%);	
-	padding:50px;
+	font-family: 'Malister';
+	font-size: 30px;
 }
 /* remove navbar button stying */
 .navbar-toggler {
