@@ -1,0 +1,152 @@
+/*Variaveis */
+@font-face {
+  font-family: "HigherJump";
+  src: url("../fonts/HigherJump-8MZ7M.ttf");
+}
+@font-face {
+  font-family: "NugoSans";
+  src: url("../fonts/NugoSansLight-9YzoK.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100vh auto auto auto 20vh;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "apresentacao apresentacao apresentacao apresentacao" "informacao informacao informacao informacao" "quadrados quadrados quadrados quadrados" "circulos circulos circulos circulos" "footer footer footer footer";
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#apresentacao {
+  grid-area: apresentacao;
+  background-color: white;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#apresentacao nav {
+  z-index: 10500;
+}
+#apresentacao ul li a {
+  font-family: "HigherJump";
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#apresentacao ul li a:hover {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#informacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20em);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 10px;
+  grid-area: informacao;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  justify-content: center;
+  align-content: center;
+}
+#informacao div {
+  text-align: center;
+}
+#informacao .textLeftInfo {
+  font-family: "Rubik Mono One", sans-serif;
+  padding: 0px 150px 0px 150px;
+  justify-self: flex-start;
+}
+#informacao h3 {
+  font-family: "NugoSans";
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#quadrados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20em);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-area: quadrados;
+  justify-content: center;
+  align-content: center;
+}
+
+#circulos {
+  grid-area: circulos;
+  justify-self: start;
+}
+#circulos div {
+  text-align: center;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  height: 50vh;
+  align-items: flex-end;
+  clip-path: polygon(100% 6%, 100% 100%, 0 100%, 0 20%);
+  padding: 50px;
+}
+
+/* remove navbar button stying */
+.navbar-toggler {
+  background: none;
+  border: none;
+  /* remove the blue outline when active or focused */
+}
+.navbar-toggler:active, .navbar-toggler:focus {
+  outline: 0;
+}
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 4px 0 4px 0;
+  transition: all 0.2s;
+  background-color: white;
+}
+.navbar-toggler .icon-bar:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+  transform: rotate(0);
+}
+
+/*# sourceMappingURL=style.css.map */
