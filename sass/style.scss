@@ -12,7 +12,21 @@
 	font-family: 'Malister';
 	src: url('../fonts/Malister-K7ZRo.ttf')
 }
-
+::-webkit-scrollbar {
+	width:10px;
+	height: 10px;
+	}
+	 
+	/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+	::-webkit-scrollbar-track {
+	background:#333;
+	}
+	 
+	/* aqui é a alça da barra, que demonstra a altura que você está na página
+	estou colocando uma cor azul clara nela*/
+	::-webkit-scrollbar-thumb {
+	background: #0092f3;
+	}
 body {
 	margin: 0;
 	padding: 0;
@@ -38,10 +52,18 @@ body {
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	overflow: hidden;
+
+
+
 	.malister{
 		font-family: 'Malister';
 		font-size: 250px;
 		font-weight: bolder;
+	}
+	@media only screen and (max-width: 800px) {
+		.malister{
+			font-size: 50px;
+		}
 	}
 	ul li a {
 		font-family: 'HigherJump';

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
   <head>
-    <title>Teste GRID</title>
+    <title>Rock and Roll</title>
     <meta charset="utf-8" />
 
     <!--FONTS-->
@@ -46,6 +46,19 @@
     <link rel="stylesheet" href="css/effectGlitch/demo1.css" type="text/css" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "a150e6a6-0f47-4614-8614-fa1359f520bf", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "005f6068-b06e-40b9-949c-6074caefdfc8", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
   </head>
   <body class="demo-1 loading">
     <div class="container-fluid">
